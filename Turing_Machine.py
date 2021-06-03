@@ -7,6 +7,9 @@ Created on Wed Jun  2 16:19:13 2021
 
 def turing_machine(transitions, state, acceptance_state, strip, pos):
 
+    if strip[18] == '0' and strip[8] == 'X' and pos == 18:
+        print('ESTADO ' + state)
+    
     #verify if state is in acceptance state and stop if it is
     if state in acceptance_state:
         return True
@@ -17,7 +20,7 @@ def turing_machine(transitions, state, acceptance_state, strip, pos):
             strip[pos] = transition[3]
             if transition[4] == 'D':
                 pos = pos+1
-            if transition[4] == 'E':
+            elif transition[4] == 'E':
                 pos = pos-1
             if turing_machine(transitions, state, acceptance_state, strip, pos):
                 return True
@@ -53,7 +56,8 @@ c = int(input())
 #Receiving strings one by one
 tape = []
 for i in range(c):
-    tape.append(str(input()))
+    tape.append(list(input() + 'B'))
+
     
 #Testing all strings
 for strip in tape:
