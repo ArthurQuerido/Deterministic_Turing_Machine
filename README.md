@@ -1,6 +1,7 @@
 # Deterministic_Turing_Machine
 Simple Python code for a deterministic Turing machine.
 
+
 Example of inputs: 
 
 8 <-- acceptance state
