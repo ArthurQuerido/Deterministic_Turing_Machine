@@ -40,4 +40,4 @@ Example of inputs: ('-' stands for empty)
 111111111#000000000  
 101011101#101011001  
 
-The machine will work on an inpunt and verify wheter the strings belongs to the language or not.
+The machine will work on an input and verify wheter the strings belongs to the language or not.
