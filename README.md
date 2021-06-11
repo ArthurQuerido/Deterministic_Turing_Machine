@@ -4,8 +4,8 @@ Simple Python code for a deterministic Turing machine.
 
 Example of inputs: 
 
-8 <-- acceptance state
-22 <-- number of transitions
+8 
+22 
 0 0 1 X D
 0 1 2 X D
 1 0 1 0 D
@@ -28,7 +28,7 @@ Example of inputs:
 0 # 7 # D
 7 X 7 X D
 7 B 8 B D
-10 <-- number of strings to be tested
+10 
 -
 #
 010#010
